@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <header class="display-block bg-dark p-4 text-center">
+        <h1>
+            <a href="/">The Tech Blog</a>
+        </h1>
+        <nav class="navbar sticky-top navbar-light bg-dark">
+
+            <form class="form nav-form d-flex justify-content-between">
+                <div>
+                    <button class="btn btn-outline-danger" id="home" type="button">Home</button>
+                    <button class="btn btn-outline-danger" id="dashboard" type="button">Dashboard</button>
+                    {{#if logged_in}}
+                    <button class="btn btn-outline-danger" id="logout" type="button">logout</button>
+                    {{else}}
+                    <button class="btn btn-outline-danger" id="login" type="button">login</button>
+                    {{/if}}
+                </div>
+
+            </form>
+
+        </nav>
+    </header>
+    <main class="DarkGrey vh-100 p-4">
+        {{{ body }}}
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+
+    <script src="/js/homepage.js"></script>
+</body>
+
+</html>
