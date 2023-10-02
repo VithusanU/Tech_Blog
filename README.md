@@ -83,8 +83,7 @@ We are using jest for testing the development of the functions. No test have bee
 <br>
 
 ## Questions
-If you have any questions, you can email them to me.
-  email: <sam@dinozio.design><br>
+
 
 ### Deployed Links
 
