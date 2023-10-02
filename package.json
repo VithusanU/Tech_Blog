@@ -1,0 +1,21 @@
+{
+  "name": "tech_blog",
+  "version": "1.0.0",
+  "description": "The Tech Blog is a blog website where developers can publish their blog posts and comment on other developers’ posts as well. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Tech_Blog"
+  },
+  "author": "VithusanU",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "jest": "^29.7.0",
+    "sequelize": "^6.33.0",
+    "sqlite3": "^5.1.6"
+  }
+}
